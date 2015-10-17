@@ -13,6 +13,16 @@ class QWStatusViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         print(NSStringFromClass(self.dynamicType))
+        
+        // 「ud」というインスタンスをつくる。
+        let ud = NSUserDefaults.standardUserDefaults()
+        // キーがidの値をとります。
+        var walkCount : Int = ud.integerForKey("walk_count")
+        
+        print(walkCount)
+        walkCount++
+        ud.setObject(walkCount, forKey: "walk_count")
+        
 
         // Do any additional setup after loading the view.
     }
