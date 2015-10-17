@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		236036DB1BD235D900F585BD /* QWStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236036DA1BD235D900F585BD /* QWStatusViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		707CF60F1BD21949006FB423 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF60E1BD21949006FB423 /* AppDelegate.swift */; };
 		707CF6111BD21949006FB423 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF6101BD21949006FB423 /* ViewController.swift */; };
 		707CF6141BD21949006FB423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 707CF6121BD21949006FB423 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		236036DA1BD235D900F585BD /* QWStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QWStatusViewController.swift; sourceTree = "<group>"; };
 		707CF60B1BD21949006FB423 /* QuestWalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestWalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		707CF60E1BD21949006FB423 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		707CF6101BD21949006FB423 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				707CF6151BD21949006FB423 /* Assets.xcassets */,
 				707CF6171BD21949006FB423 /* LaunchScreen.storyboard */,
 				707CF61A1BD21949006FB423 /* Info.plist */,
+				236036DA1BD235D900F585BD /* QWStatusViewController.swift */,
 			);
 			path = QuestWalk;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			files = (
 				707CF6111BD21949006FB423 /* ViewController.swift in Sources */,
 				707CF63D1BD21B75006FB423 /* QuestListTableViewController.swift in Sources */,
+				236036DB1BD235D900F585BD /* QWStatusViewController.swift in Sources */,
 				707CF60F1BD21949006FB423 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +491,7 @@
 				707CF6351BD21949006FB423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		707CF6361BD21949006FB423 /* Build configuration list for PBXNativeTarget "QuestWalkTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +500,7 @@
 				707CF6381BD21949006FB423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		707CF6391BD21949006FB423 /* Build configuration list for PBXNativeTarget "QuestWalkUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +509,7 @@
 				707CF63B1BD21949006FB423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
