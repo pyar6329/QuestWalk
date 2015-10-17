@@ -14,6 +14,7 @@
 		707CF6191BD21949006FB423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 707CF6171BD21949006FB423 /* LaunchScreen.storyboard */; };
 		707CF6241BD21949006FB423 /* QuestWalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF6231BD21949006FB423 /* QuestWalkTests.swift */; };
 		707CF62F1BD21949006FB423 /* QuestWalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF62E1BD21949006FB423 /* QuestWalkUITests.swift */; };
+		707CF63D1BD21B75006FB423 /* QuestListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF63C1BD21B75006FB423 /* QuestListTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		707CF62A1BD21949006FB423 /* QuestWalkUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuestWalkUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		707CF62E1BD21949006FB423 /* QuestWalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestWalkUITests.swift; sourceTree = "<group>"; };
 		707CF6301BD21949006FB423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		707CF63C1BD21B75006FB423 /* QuestListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				707CF60E1BD21949006FB423 /* AppDelegate.swift */,
 				707CF6101BD21949006FB423 /* ViewController.swift */,
+				707CF63C1BD21B75006FB423 /* QuestListTableViewController.swift */,
 				707CF6121BD21949006FB423 /* Main.storyboard */,
 				707CF6151BD21949006FB423 /* Assets.xcassets */,
 				707CF6171BD21949006FB423 /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				707CF6111BD21949006FB423 /* ViewController.swift in Sources */,
+				707CF63D1BD21B75006FB423 /* QuestListTableViewController.swift in Sources */,
 				707CF60F1BD21949006FB423 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
