@@ -10,7 +10,7 @@ import UIKit
 
 class QWQuestProgressViewController: UIViewController {
 
-    
+    // @IBOutlet weak var totalSportTimes: UILabel!
     @IBOutlet weak var QuestStart: UIButton!
     // クエストの実行時間を変数として保存
     var questStartTime:NSDate = NSDate()
@@ -30,6 +30,7 @@ class QWQuestProgressViewController: UIViewController {
         questStartTime = NSDate()
         // 開始時刻の表示
         print("starttime" + String(questStartTime))
+        //totalSportTimes.text = String(questStartTime)
     }
 
     /*
