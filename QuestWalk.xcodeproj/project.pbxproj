@@ -15,6 +15,7 @@
 		707CF6241BD21949006FB423 /* QuestWalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF6231BD21949006FB423 /* QuestWalkTests.swift */; };
 		707CF62F1BD21949006FB423 /* QuestWalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF62E1BD21949006FB423 /* QuestWalkUITests.swift */; };
 		707CF63D1BD21B75006FB423 /* QuestListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF63C1BD21B75006FB423 /* QuestListTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		F8B7FDFD1BD7F135008EE000 /* QWQuestProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B7FDFC1BD7F135008EE000 /* QWQuestProgressViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		707CF62E1BD21949006FB423 /* QuestWalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestWalkUITests.swift; sourceTree = "<group>"; };
 		707CF6301BD21949006FB423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		707CF63C1BD21B75006FB423 /* QuestListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestListTableViewController.swift; sourceTree = "<group>"; };
+		F8B7FDFC1BD7F135008EE000 /* QWQuestProgressViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QWQuestProgressViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				707CF60E1BD21949006FB423 /* AppDelegate.swift */,
+				F8B7FDFC1BD7F135008EE000 /* QWQuestProgressViewController.swift */,
 				707CF6101BD21949006FB423 /* ViewController.swift */,
 				707CF63C1BD21B75006FB423 /* QuestListTableViewController.swift */,
 				707CF6121BD21949006FB423 /* Main.storyboard */,
@@ -195,6 +198,7 @@
 				TargetAttributes = {
 					707CF60A1BD21949006FB423 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 745U3M8L7Q;
 					};
 					707CF61E1BD21949006FB423 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -258,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8B7FDFD1BD7F135008EE000 /* QWQuestProgressViewController.swift in Sources */,
 				707CF6111BD21949006FB423 /* ViewController.swift in Sources */,
 				707CF63D1BD21B75006FB423 /* QuestListTableViewController.swift in Sources */,
 				707CF60F1BD21949006FB423 /* AppDelegate.swift in Sources */,
@@ -402,9 +407,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = QuestWalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.aiit.chubachipbl2015.QuestWalk;
+				PRODUCT_BUNDLE_IDENTIFIER = bz.pyar.QuestWalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -413,9 +419,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = QuestWalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.aiit.chubachipbl2015.QuestWalk;
+				PRODUCT_BUNDLE_IDENTIFIER = bz.pyar.QuestWalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -487,6 +494,7 @@
 				707CF6351BD21949006FB423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		707CF6361BD21949006FB423 /* Build configuration list for PBXNativeTarget "QuestWalkTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +503,7 @@
 				707CF6381BD21949006FB423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		707CF6391BD21949006FB423 /* Build configuration list for PBXNativeTarget "QuestWalkUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +512,7 @@
 				707CF63B1BD21949006FB423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
