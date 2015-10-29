@@ -7,24 +7,54 @@
 //
 
 import UIKit
+import Foundation
+import CoreMotion
 
 class QWStatusViewController: UIViewController {
-
+    // メンバー変数でないと動作しないので注意
+    let pedometer = CMPedometer()
+    @IBOutlet weak var label1: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(NSStringFromClass(self.dynamicType))
         
-        // 「ud」というインスタンスをつくる。
-        let ud = NSUserDefaults.standardUserDefaults()
-        // キーがidの値をとります。
-        var walkCount : Int = ud.integerForKey("walk_count")
-        
-        print(walkCount)
-        walkCount++
-        ud.setObject(walkCount, forKey: "walk_count")
-        
-
-        // Do any additional setup after loading the view.
+        // CMPedometerが利用できるか確認
+        if CMPedometer.isStepCountingAvailable() {
+            // 過去1日分のデータ
+            let fromDate = NSDate(timeIntervalSinceNow: -60 * 60 * 24)
+            // この日まで
+            let toDate = NSDate()
+            pedometer.queryPedometerDataFromDate(fromDate, toDate: toDate, withHandler: {
+                [unowned self] data, error in
+                dispatch_async(dispatch_get_main_queue(), {
+                    print("update")
+                    if error != nil {
+                        // エラー
+                        self.label1.text = "エラー : \(error)"
+                        print("エラー : \(error)")
+                    } else {
+                        let lengthFormatter = NSLengthFormatter()
+                        // 歩数
+                        let steps = data!.numberOfSteps
+                        // 距離
+                        let distance = data!.distance!.doubleValue
+                        // 速さ
+                        let time = data!.endDate.timeIntervalSinceDate(data!.startDate)
+                        let speed = distance / time
+                        // 上った回数
+                        let floorsAscended = data!.floorsAscended
+                        // 降りた回数
+                        let floorsDescended = data!.floorsDescended
+                        // 結果をラベルに出力
+                        self.label1.text = "Steps: \(steps)"
+                            + "\n\nDistance : \(lengthFormatter.stringFromMeters(distance))"
+                            + "\n\nSpeed : \(lengthFormatter.stringFromMeters(speed)) / s"
+                            + "\n\nfloorsAscended : \(floorsAscended)"
+                            + "\n\nfloorsDescended : \(floorsDescended)"
+                    }
+                })
+                })
+        }
     }
 
     override func didReceiveMemoryWarning() {
