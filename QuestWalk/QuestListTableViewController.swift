@@ -19,7 +19,23 @@ class QuestListTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        questList = Array<String>(arrayLiteral: "30秒歩く", "1分走る", "5分腹筋する")
+//        questList = Array<String>(arrayLiteral: "30秒歩く", "1分走る", "5分腹筋する")
+        questList = Array<String>()
+        
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://infinite-shelf-2944.herokuapp.com/list")!)
+        httpGet(request, success: { (dict) -> Void in
+            //  成功した場合の処理を書く
+            if let data = dict { // dictが nilかどうかを判定する
+                let items:NSArray = data.objectForKey("items") as! NSArray
+                items.enumerateObjectsUsingBlock({ (item, Index, stop) -> Void in
+                    self.questList.append((item as! NSDictionary).objectForKey("title") as! String)
+                })
+                self.tableView.reloadData()
+            }
+            }) { (error) -> Void in
+                // 失敗した場合の処理を書く
+           print(error!.localizedDescription)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -93,5 +109,23 @@ class QuestListTableViewController: UITableViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func httpGet(request: NSURLRequest!, success: (NSDictionary?) -> Void, error: (NSError?) -> Void) {
+        let session = NSURLSession.sharedSession()
+        let task = session.dataTaskWithRequest(request){
+            (data, response, err) -> Void in
+            if err != nil {
+                error(err)
+            } else {
+                do {
+                    let dict = try NSJSONSerialization.JSONObjectWithData(data!, options: .MutableContainers) as! NSDictionary
+                    // エラーが起こらなければ後続の処理...
+                    success(dict)
+                } catch  {
+                    // エラーが起こったらここに来るのでエラー処理などをする
+                }
+            }
+        }
+        task.resume()
+    }
 
 }
