@@ -17,19 +17,32 @@ class QWStatusViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "onUpdate:", userInfo: nil, repeats: true)
+        onUpdate(NSTimer())
+    }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func onUpdate(timer: NSTimer){
         // CMPedometerが利用できるか確認
         if CMPedometer.isStepCountingAvailable() {
-            // 過去1日分のデータ
-            let fromDate = NSDate(timeIntervalSinceNow: -60 * 60 * 24)
-            // この日まで
+            // 現在時刻
             let toDate = NSDate()
-            pedometer.queryPedometerDataFromDate(fromDate, toDate: toDate, withHandler: {
+            
+            // 今日の0時
+            let df = NSDateFormatter()
+            df.locale = NSLocale(localeIdentifier: "ja_JP")
+            df.dateFormat = "yyyy/MM/dd 00:00:00"
+            let fromDate = df.dateFromString(df.stringFromDate(NSDate()))
+            // 本日の成果
+            pedometer.queryPedometerDataFromDate(fromDate!, toDate: toDate, withHandler: {
                 [unowned self] data, error in
                 dispatch_async(dispatch_get_main_queue(), {
                     print("update")
                     if error != nil {
-                        // エラー
                         self.label1.text = "エラー : \(error)"
                         print("エラー : \(error)")
                     } else {
@@ -39,29 +52,20 @@ class QWStatusViewController: UIViewController {
                         // 距離
                         let distance = data!.distance!.doubleValue
                         // 速さ
-                        let time = data!.endDate.timeIntervalSinceDate(data!.startDate)
-                        let speed = distance / time
-                        // 上った回数
-                        let floorsAscended = data!.floorsAscended
-                        // 降りた回数
-                        let floorsDescended = data!.floorsDescended
+                        //let time = data!.endDate.timeIntervalSinceDate(data!.startDate)
+                        //let speed = distance / time
                         // 結果をラベルに出力
                         self.label1.text = "Steps: \(steps)"
                             + "\n\nDistance : \(lengthFormatter.stringFromMeters(distance))"
-                            + "\n\nSpeed : \(lengthFormatter.stringFromMeters(speed)) / s"
-                            + "\n\nfloorsAscended : \(floorsAscended)"
-                            + "\n\nfloorsDescended : \(floorsDescended)"
+                            //+ "\n\nSpeed : \(lengthFormatter.stringFromMeters(speed)) / s"
                     }
                 })
                 })
+        } else {
+            print("Cannot use CMPedometer")
         }
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 
     /*
     // MARK: - Navigation
