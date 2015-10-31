@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21F57182A05936664B4F42A8 /* Pods_QuestWalk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00CCF8ADB97504E8A70DF2A8 /* Pods_QuestWalk.framework */; };
+		4DD4365B3396125B17D014F6 /* Pods_QuestWalkTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4524C02DBDD6E87DEE55EEAC /* Pods_QuestWalkTests.framework */; };
 		707CF60F1BD21949006FB423 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF60E1BD21949006FB423 /* AppDelegate.swift */; };
 		707CF6111BD21949006FB423 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF6101BD21949006FB423 /* ViewController.swift */; };
 		707CF6141BD21949006FB423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 707CF6121BD21949006FB423 /* Main.storyboard */; };
@@ -14,7 +16,10 @@
 		707CF6191BD21949006FB423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 707CF6171BD21949006FB423 /* LaunchScreen.storyboard */; };
 		707CF6241BD21949006FB423 /* QuestWalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF6231BD21949006FB423 /* QuestWalkTests.swift */; };
 		707CF62F1BD21949006FB423 /* QuestWalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF62E1BD21949006FB423 /* QuestWalkUITests.swift */; };
-		707CF63D1BD21B75006FB423 /* QuestListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF63C1BD21B75006FB423 /* QuestListTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		707CF63D1BD21B75006FB423 /* QuestListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF63C1BD21B75006FB423 /* QuestListTableViewController.swift */; };
+		B091A98E1BD7BBA100F7A513 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B091A98D1BD7BBA100F7A513 /* CoreMotion.framework */; };
+		B091A9901BD7BC2000F7A513 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B091A98F1BD7BC2000F7A513 /* HealthKit.framework */; };
+		B370BCC81746EA2890F1E91B /* Pods_QuestWalkUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E55236E66EF531BE2F89ED /* Pods_QuestWalkUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00CCF8ADB97504E8A70DF2A8 /* Pods_QuestWalk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestWalk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		21223BF170360F563F77AE3B /* Pods-QuestWalkTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestWalkTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuestWalkTests/Pods-QuestWalkTests.debug.xcconfig"; sourceTree = "<group>"; };
+		29C08FF52A4D3ED1834D8E72 /* Pods-QuestWalkUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestWalkUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuestWalkUITests/Pods-QuestWalkUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		32701FD6AFD698EF57864678 /* Pods-QuestWalkUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestWalkUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuestWalkUITests/Pods-QuestWalkUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4524C02DBDD6E87DEE55EEAC /* Pods_QuestWalkTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestWalkTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E000611C4C62C91C51ECBCB /* Pods-QuestWalk.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestWalk.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuestWalk/Pods-QuestWalk.release.xcconfig"; sourceTree = "<group>"; };
 		707CF60B1BD21949006FB423 /* QuestWalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestWalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		707CF60E1BD21949006FB423 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		707CF6101BD21949006FB423 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +60,12 @@
 		707CF62E1BD21949006FB423 /* QuestWalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestWalkUITests.swift; sourceTree = "<group>"; };
 		707CF6301BD21949006FB423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		707CF63C1BD21B75006FB423 /* QuestListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestListTableViewController.swift; sourceTree = "<group>"; };
+		76E55236E66EF531BE2F89ED /* Pods_QuestWalkUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuestWalkUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA74E5EE98357332265032B7 /* Pods-QuestWalkTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestWalkTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuestWalkTests/Pods-QuestWalkTests.release.xcconfig"; sourceTree = "<group>"; };
+		B091A98D1BD7BBA100F7A513 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		B091A98F1BD7BC2000F7A513 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		B091A9911BD7BC2000F7A513 /* QuestWalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = QuestWalk.entitlements; sourceTree = "<group>"; };
+		BD1F948B67E6929BF8DDB298 /* Pods-QuestWalk.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuestWalk.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuestWalk/Pods-QuestWalk.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +73,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B091A98E1BD7BBA100F7A513 /* CoreMotion.framework in Frameworks */,
+				B091A9901BD7BC2000F7A513 /* HealthKit.framework in Frameworks */,
+				21F57182A05936664B4F42A8 /* Pods_QuestWalk.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DD4365B3396125B17D014F6 /* Pods_QuestWalkTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +91,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B370BCC81746EA2890F1E91B /* Pods_QuestWalkUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66786694BCEFB146F028291B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00CCF8ADB97504E8A70DF2A8 /* Pods_QuestWalk.framework */,
+				4524C02DBDD6E87DEE55EEAC /* Pods_QuestWalkTests.framework */,
+				76E55236E66EF531BE2F89ED /* Pods_QuestWalkUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		707CF6021BD21949006FB423 = {
 			isa = PBXGroup;
 			children = (
+				B091A98F1BD7BC2000F7A513 /* HealthKit.framework */,
+				B091A98D1BD7BBA100F7A513 /* CoreMotion.framework */,
 				707CF60D1BD21949006FB423 /* QuestWalk */,
 				707CF6221BD21949006FB423 /* QuestWalkTests */,
 				707CF62D1BD21949006FB423 /* QuestWalkUITests */,
 				707CF60C1BD21949006FB423 /* Products */,
+				AA553CCEA4EF3C75D650E39C /* Pods */,
+				66786694BCEFB146F028291B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +135,7 @@
 		707CF60D1BD21949006FB423 /* QuestWalk */ = {
 			isa = PBXGroup;
 			children = (
+				B091A9911BD7BC2000F7A513 /* QuestWalk.entitlements */,
 				707CF60E1BD21949006FB423 /* AppDelegate.swift */,
 				707CF6101BD21949006FB423 /* ViewController.swift */,
 				707CF63C1BD21B75006FB423 /* QuestListTableViewController.swift */,
@@ -128,6 +165,19 @@
 			path = QuestWalkUITests;
 			sourceTree = "<group>";
 		};
+		AA553CCEA4EF3C75D650E39C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD1F948B67E6929BF8DDB298 /* Pods-QuestWalk.debug.xcconfig */,
+				4E000611C4C62C91C51ECBCB /* Pods-QuestWalk.release.xcconfig */,
+				21223BF170360F563F77AE3B /* Pods-QuestWalkTests.debug.xcconfig */,
+				AA74E5EE98357332265032B7 /* Pods-QuestWalkTests.release.xcconfig */,
+				29C08FF52A4D3ED1834D8E72 /* Pods-QuestWalkUITests.debug.xcconfig */,
+				32701FD6AFD698EF57864678 /* Pods-QuestWalkUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +185,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 707CF6331BD21949006FB423 /* Build configuration list for PBXNativeTarget "QuestWalk" */;
 			buildPhases = (
+				83FAF282C291513957BB0D21 /* Check Pods Manifest.lock */,
 				707CF6071BD21949006FB423 /* Sources */,
 				707CF6081BD21949006FB423 /* Frameworks */,
 				707CF6091BD21949006FB423 /* Resources */,
+				3EBCEA1F105A81BE150BF959 /* Embed Pods Frameworks */,
+				2FCBA4D36CAEDB9A10278227 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 707CF6361BD21949006FB423 /* Build configuration list for PBXNativeTarget "QuestWalkTests" */;
 			buildPhases = (
+				0BEF54262D0A4EDCA702623F /* Check Pods Manifest.lock */,
 				707CF61B1BD21949006FB423 /* Sources */,
 				707CF61C1BD21949006FB423 /* Frameworks */,
 				707CF61D1BD21949006FB423 /* Resources */,
+				28CDADAA63241AF4B5C4791E /* Embed Pods Frameworks */,
+				13189D3CA9EB1CCDDE48D49F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +226,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 707CF6391BD21949006FB423 /* Build configuration list for PBXNativeTarget "QuestWalkUITests" */;
 			buildPhases = (
+				61B41795F9A96379928342A6 /* Check Pods Manifest.lock */,
 				707CF6261BD21949006FB423 /* Sources */,
 				707CF6271BD21949006FB423 /* Frameworks */,
 				707CF6281BD21949006FB423 /* Resources */,
+				9278B02BF5530A3A0D933043 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -190,11 +248,18 @@
 		707CF6031BD21949006FB423 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = SBR2015;
 				TargetAttributes = {
 					707CF60A1BD21949006FB423 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = DY8AUB5K6A;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
 					};
 					707CF61E1BD21949006FB423 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -252,6 +317,129 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0BEF54262D0A4EDCA702623F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		13189D3CA9EB1CCDDE48D49F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuestWalkTests/Pods-QuestWalkTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28CDADAA63241AF4B5C4791E /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuestWalkTests/Pods-QuestWalkTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2FCBA4D36CAEDB9A10278227 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuestWalk/Pods-QuestWalk-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EBCEA1F105A81BE150BF959 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuestWalk/Pods-QuestWalk-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61B41795F9A96379928342A6 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		83FAF282C291513957BB0D21 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9278B02BF5530A3A0D933043 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QuestWalkUITests/Pods-QuestWalkUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		707CF6071BD21949006FB423 /* Sources */ = {
@@ -400,28 +588,39 @@
 		};
 		707CF6341BD21949006FB423 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD1F948B67E6929BF8DDB298 /* Pods-QuestWalk.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuestWalk/QuestWalk.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = QuestWalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.aiit.chubachipbl2015.QuestWalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		707CF6351BD21949006FB423 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E000611C4C62C91C51ECBCB /* Pods-QuestWalk.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = QuestWalk/QuestWalk.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = QuestWalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.aiit.chubachipbl2015.QuestWalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 		707CF6371BD21949006FB423 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21223BF170360F563F77AE3B /* Pods-QuestWalkTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = QuestWalkTests/Info.plist;
@@ -434,6 +633,7 @@
 		};
 		707CF6381BD21949006FB423 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA74E5EE98357332265032B7 /* Pods-QuestWalkTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = QuestWalkTests/Info.plist;
@@ -446,6 +646,7 @@
 		};
 		707CF63A1BD21949006FB423 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29C08FF52A4D3ED1834D8E72 /* Pods-QuestWalkUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = QuestWalkUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -458,6 +659,7 @@
 		};
 		707CF63B1BD21949006FB423 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32701FD6AFD698EF57864678 /* Pods-QuestWalkUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = QuestWalkUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -487,6 +689,7 @@
 				707CF6351BD21949006FB423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		707CF6361BD21949006FB423 /* Build configuration list for PBXNativeTarget "QuestWalkTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +698,7 @@
 				707CF6381BD21949006FB423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		707CF6391BD21949006FB423 /* Build configuration list for PBXNativeTarget "QuestWalkUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +707,7 @@
 				707CF63B1BD21949006FB423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
