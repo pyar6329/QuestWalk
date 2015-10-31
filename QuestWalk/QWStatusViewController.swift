@@ -60,7 +60,7 @@ class QWStatusViewController: UIViewController {
                             //+ "\n\nSpeed : \(lengthFormatter.stringFromMeters(speed)) / s"
                     }
                 })
-                })
+            })
         } else {
             print("Cannot use CMPedometer")
         }
