@@ -11,6 +11,7 @@ import Foundation
 import CoreMotion
 
 class QWStatusViewController: UIViewController {
+
     // メンバー変数でないと動作しないので注意
     let pedometer = CMPedometer()
     @IBOutlet weak var label1: UILabel!
@@ -19,11 +20,7 @@ class QWStatusViewController: UIViewController {
         super.viewDidLoad()
         NSTimer.scheduledTimerWithTimeInterval(10, target: self, selector: "onUpdate:", userInfo: nil, repeats: true)
         onUpdate(NSTimer())
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
     }
     
     func onUpdate(timer: NSTimer){

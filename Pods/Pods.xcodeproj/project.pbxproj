@@ -1,0 +1,468 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0764E786D9377A14F4054AF38CAF2F55 /* Pods-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */; };
+		14FDBF523BC600AD0C4B06278B77B1C8 /* BEMPermanentPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A4638BC2460ECE00ADB97716FE873B /* BEMPermanentPopupView.m */; };
+		18EB02A89F9361A41430818491B40766 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		1A4F070F394721F2F111EBB3C642156A /* BEMSimpleLineGraph-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1A873F2A4E276E47E5B3515643E3D6 /* BEMSimpleLineGraph-dummy.m */; };
+		33785355319A97C33B28589019CA61AA /* BEMPermanentPopupView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0962FAF33A78FCAD0A63DFFFA595159F /* BEMPermanentPopupView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		440979F65B7780A289B0117020121F23 /* BEMAverageLine.h in Headers */ = {isa = PBXBuildFile; fileRef = C9673C60B4699FC0332834FD718D2B6E /* BEMAverageLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		460B15E7F07B17D5A8CEC0413191AB0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		A5F065032C26C02E77109F8D68661CB3 /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55C97E2FB322850AE1BE6AD89F74B6B6 /* BEMSimpleLineGraphView.m */; };
+		AB9FFC11605C9C3D30FAFABBBB3684F1 /* BEMSimpleLineGraphView.h in Headers */ = {isa = PBXBuildFile; fileRef = D2278924BB2F43386DD7A402B8327480 /* BEMSimpleLineGraphView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA930D392CE93D3B9D86F4BD0517537C /* BEMCircle.h in Headers */ = {isa = PBXBuildFile; fileRef = 544096353F458C978521E8108086A245 /* BEMCircle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DC15EDE3634B704EE1B016783DEEB9F3 /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 53EC72ABDF0E9F52CFDA20E5F2DCCD22 /* BEMCircle.m */; };
+		F6A096DDCB061F7A720C4B4817A7B7F8 /* BEMLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 705C80241744CED692FAFD8C39C382FB /* BEMLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FAD9082CDF582F4EA38DFC65AE83A866 /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FC3B9C395417B141A63403C8A26A8A9 /* BEMLine.m */; };
+		FCA02E2990F0506E9FB6D443D8BFAA21 /* BEMAverageLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB28E55172CAF5BB3824C38AA5A6220 /* BEMAverageLine.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5D0862BD98B3A55CDF78E5508A328F99 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D3A2255DD8FDD12BBA7AF5EC328AB34;
+			remoteInfo = BEMSimpleLineGraph;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00DE35A3E390E3D397AE58C86B30452D /* libBEMSimpleLineGraph.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libBEMSimpleLineGraph.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A4638BC2460ECE00ADB97716FE873B /* BEMPermanentPopupView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMPermanentPopupView.m; path = Classes/BEMPermanentPopupView.m; sourceTree = "<group>"; };
+		0962FAF33A78FCAD0A63DFFFA595159F /* BEMPermanentPopupView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMPermanentPopupView.h; path = Classes/BEMPermanentPopupView.h; sourceTree = "<group>"; };
+		10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-acknowledgements.plist"; sourceTree = "<group>"; };
+		1EB28E55172CAF5BB3824C38AA5A6220 /* BEMAverageLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMAverageLine.m; path = Classes/BEMAverageLine.m; sourceTree = "<group>"; };
+		272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-dummy.m"; sourceTree = "<group>"; };
+		37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3FC3B9C395417B141A63403C8A26A8A9 /* BEMLine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMLine.m; path = Classes/BEMLine.m; sourceTree = "<group>"; };
+		4C22EBDE77C41D9DB2428EEFABF76EB1 /* BEMSimpleLineGraph-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BEMSimpleLineGraph-prefix.pch"; sourceTree = "<group>"; };
+		4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.debug.xcconfig; sourceTree = "<group>"; };
+		53EC72ABDF0E9F52CFDA20E5F2DCCD22 /* BEMCircle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMCircle.m; path = Classes/BEMCircle.m; sourceTree = "<group>"; };
+		544096353F458C978521E8108086A245 /* BEMCircle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMCircle.h; path = Classes/BEMCircle.h; sourceTree = "<group>"; };
+		55C97E2FB322850AE1BE6AD89F74B6B6 /* BEMSimpleLineGraphView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BEMSimpleLineGraphView.m; path = Classes/BEMSimpleLineGraphView.m; sourceTree = "<group>"; };
+		6075D7347367D111974DF03208EA0F06 /* BEMSimpleLineGraph.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BEMSimpleLineGraph.xcconfig; sourceTree = "<group>"; };
+		6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-frameworks.sh"; sourceTree = "<group>"; };
+		6E1A873F2A4E276E47E5B3515643E3D6 /* BEMSimpleLineGraph-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BEMSimpleLineGraph-dummy.m"; sourceTree = "<group>"; };
+		705C80241744CED692FAFD8C39C382FB /* BEMLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMLine.h; path = Classes/BEMLine.h; sourceTree = "<group>"; };
+		98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Pods.release.xcconfig; sourceTree = "<group>"; };
+		A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-resources.sh"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C9673C60B4699FC0332834FD718D2B6E /* BEMAverageLine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMAverageLine.h; path = Classes/BEMAverageLine.h; sourceTree = "<group>"; };
+		D2278924BB2F43386DD7A402B8327480 /* BEMSimpleLineGraphView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BEMSimpleLineGraphView.h; path = Classes/BEMSimpleLineGraphView.h; sourceTree = "<group>"; };
+		DDFB957794040E3279049C3D32BA9EE8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A042274D80C8862E6CA6EDEE6FEC8D1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EB02A89F9361A41430818491B40766 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5691BBA5CAA977900AD7D26A661F486 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				460B15E7F07B17D5A8CEC0413191AB0F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B3D1D13E0C6553800746CB8FD61CF946 /* Pods */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4DD892A47B8DC3AF7E29E213A0B912CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00DE35A3E390E3D397AE58C86B30452D /* libBEMSimpleLineGraph.a */,
+				DDFB957794040E3279049C3D32BA9EE8 /* libPods.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		794744D2F091A7C11D73AAB7CBE1A255 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFB50C804577D5E9A876A68D553ABDA1 /* BEMSimpleLineGraph */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				794744D2F091A7C11D73AAB7CBE1A255 /* Pods */,
+				4DD892A47B8DC3AF7E29E213A0B912CC /* Products */,
+				037C0CA694176A3C0915F62C9D20B3E6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		7E2400842951872055332058EFEF5DBE /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6075D7347367D111974DF03208EA0F06 /* BEMSimpleLineGraph.xcconfig */,
+				6E1A873F2A4E276E47E5B3515643E3D6 /* BEMSimpleLineGraph-dummy.m */,
+				4C22EBDE77C41D9DB2428EEFABF76EB1 /* BEMSimpleLineGraph-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/BEMSimpleLineGraph";
+			sourceTree = "<group>";
+		};
+		B3D1D13E0C6553800746CB8FD61CF946 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37DB56D75062CC75FCB0966E1C6E8A8E /* Pods-acknowledgements.markdown */,
+				10834806BD7B412BC24F347361FA2C8E /* Pods-acknowledgements.plist */,
+				272643F56613CA0D336AE3DBF19DC404 /* Pods-dummy.m */,
+				6911BECA35E7518D864239B7E898EEF3 /* Pods-frameworks.sh */,
+				A1A36D34413696BE466E2CA0AFF194DA /* Pods-resources.sh */,
+				4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */,
+				98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			path = "Target Support Files/Pods";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		FFB50C804577D5E9A876A68D553ABDA1 /* BEMSimpleLineGraph */ = {
+			isa = PBXGroup;
+			children = (
+				C9673C60B4699FC0332834FD718D2B6E /* BEMAverageLine.h */,
+				1EB28E55172CAF5BB3824C38AA5A6220 /* BEMAverageLine.m */,
+				544096353F458C978521E8108086A245 /* BEMCircle.h */,
+				53EC72ABDF0E9F52CFDA20E5F2DCCD22 /* BEMCircle.m */,
+				705C80241744CED692FAFD8C39C382FB /* BEMLine.h */,
+				3FC3B9C395417B141A63403C8A26A8A9 /* BEMLine.m */,
+				0962FAF33A78FCAD0A63DFFFA595159F /* BEMPermanentPopupView.h */,
+				05A4638BC2460ECE00ADB97716FE873B /* BEMPermanentPopupView.m */,
+				D2278924BB2F43386DD7A402B8327480 /* BEMSimpleLineGraphView.h */,
+				55C97E2FB322850AE1BE6AD89F74B6B6 /* BEMSimpleLineGraphView.m */,
+				7E2400842951872055332058EFEF5DBE /* Support Files */,
+			);
+			path = BEMSimpleLineGraph;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		411B88BADC316373E29553409356C674 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				440979F65B7780A289B0117020121F23 /* BEMAverageLine.h in Headers */,
+				CA930D392CE93D3B9D86F4BD0517537C /* BEMCircle.h in Headers */,
+				F6A096DDCB061F7A720C4B4817A7B7F8 /* BEMLine.h in Headers */,
+				33785355319A97C33B28589019CA61AA /* BEMPermanentPopupView.h in Headers */,
+				AB9FFC11605C9C3D30FAFABBBB3684F1 /* BEMSimpleLineGraphView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0D3A2255DD8FDD12BBA7AF5EC328AB34 /* BEMSimpleLineGraph */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 381D8F4F5EC665781A9EEA85B791587C /* Build configuration list for PBXNativeTarget "BEMSimpleLineGraph" */;
+			buildPhases = (
+				817777584491AB75AFBE77541A2AF08E /* Sources */,
+				A042274D80C8862E6CA6EDEE6FEC8D1C /* Frameworks */,
+				411B88BADC316373E29553409356C674 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BEMSimpleLineGraph;
+			productName = BEMSimpleLineGraph;
+			productReference = 00DE35A3E390E3D397AE58C86B30452D /* libBEMSimpleLineGraph.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		5EA638A280373A4EC4D1DE5FE3130569 /* Pods */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B7BC798C2DAEE990C198E1D7BED8ED9D /* Build configuration list for PBXNativeTarget "Pods" */;
+			buildPhases = (
+				831AC5BFD33DBBAC6634A6602939C260 /* Sources */,
+				A5691BBA5CAA977900AD7D26A661F486 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5B385430AB265AF8D706DBCA756224C9 /* PBXTargetDependency */,
+			);
+			name = Pods;
+			productName = Pods;
+			productReference = DDFB957794040E3279049C3D32BA9EE8 /* libPods.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 4DD892A47B8DC3AF7E29E213A0B912CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D3A2255DD8FDD12BBA7AF5EC328AB34 /* BEMSimpleLineGraph */,
+				5EA638A280373A4EC4D1DE5FE3130569 /* Pods */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		817777584491AB75AFBE77541A2AF08E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FCA02E2990F0506E9FB6D443D8BFAA21 /* BEMAverageLine.m in Sources */,
+				DC15EDE3634B704EE1B016783DEEB9F3 /* BEMCircle.m in Sources */,
+				FAD9082CDF582F4EA38DFC65AE83A866 /* BEMLine.m in Sources */,
+				14FDBF523BC600AD0C4B06278B77B1C8 /* BEMPermanentPopupView.m in Sources */,
+				1A4F070F394721F2F111EBB3C642156A /* BEMSimpleLineGraph-dummy.m in Sources */,
+				A5F065032C26C02E77109F8D68661CB3 /* BEMSimpleLineGraphView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		831AC5BFD33DBBAC6634A6602939C260 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0764E786D9377A14F4054AF38CAF2F55 /* Pods-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5B385430AB265AF8D706DBCA756224C9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = BEMSimpleLineGraph;
+			target = 0D3A2255DD8FDD12BBA7AF5EC328AB34 /* BEMSimpleLineGraph */;
+			targetProxy = 5D0862BD98B3A55CDF78E5508A328F99 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		36CF5A990FBABB46E6689FB6BB3C7CA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E762F23EC34ED4A6FF3312D84E33A40 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		562CC02F5B798D7C4A17F46AC97CA306 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98C98CDFB3F20F2925F6CD1F141BB14F /* Pods.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6928C001291C59ACB076C6CF8402D39E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6075D7347367D111974DF03208EA0F06 /* BEMSimpleLineGraph.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BEMSimpleLineGraph/BEMSimpleLineGraph-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B4FA9966F89C9042BF8212DF87AB6FA6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6075D7347367D111974DF03208EA0F06 /* BEMSimpleLineGraph.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BEMSimpleLineGraph/BEMSimpleLineGraph-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
+				74857149DC1E0D599B8A01A78349A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		381D8F4F5EC665781A9EEA85B791587C /* Build configuration list for PBXNativeTarget "BEMSimpleLineGraph" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6928C001291C59ACB076C6CF8402D39E /* Debug */,
+				B4FA9966F89C9042BF8212DF87AB6FA6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B7BC798C2DAEE990C198E1D7BED8ED9D /* Build configuration list for PBXNativeTarget "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				36CF5A990FBABB46E6689FB6BB3C7CA8 /* Debug */,
+				562CC02F5B798D7C4A17F46AC97CA306 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
