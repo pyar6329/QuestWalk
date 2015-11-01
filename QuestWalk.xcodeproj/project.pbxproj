@@ -14,7 +14,7 @@
 		707CF6191BD21949006FB423 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 707CF6171BD21949006FB423 /* LaunchScreen.storyboard */; };
 		707CF6241BD21949006FB423 /* QuestWalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF6231BD21949006FB423 /* QuestWalkTests.swift */; };
 		707CF62F1BD21949006FB423 /* QuestWalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF62E1BD21949006FB423 /* QuestWalkUITests.swift */; };
-		707CF63D1BD21B75006FB423 /* QuestListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF63C1BD21B75006FB423 /* QuestListTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		707CF63D1BD21B75006FB423 /* QuestListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF63C1BD21B75006FB423 /* QuestListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -172,7 +172,6 @@
 			buildPhases = (
 				707CF6261BD21949006FB423 /* Sources */,
 				707CF6271BD21949006FB423 /* Frameworks */,
-				707CF6281BD21949006FB423 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -190,11 +189,18 @@
 		707CF6031BD21949006FB423 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = SBR2015;
 				TargetAttributes = {
 					707CF60A1BD21949006FB423 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = KHFXF6N2QE;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+						};
 					};
 					707CF61E1BD21949006FB423 = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -238,13 +244,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		707CF61D1BD21949006FB423 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		707CF6281BD21949006FB423 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -402,10 +401,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = QuestWalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.aiit.chubachipbl2015.QuestWalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -413,10 +415,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = QuestWalk/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.aiit.chubachipbl2015.QuestWalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -487,6 +492,7 @@
 				707CF6351BD21949006FB423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		707CF6361BD21949006FB423 /* Build configuration list for PBXNativeTarget "QuestWalkTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +501,7 @@
 				707CF6381BD21949006FB423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		707CF6391BD21949006FB423 /* Build configuration list for PBXNativeTarget "QuestWalkUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +510,7 @@
 				707CF63B1BD21949006FB423 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
