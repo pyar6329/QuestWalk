@@ -19,10 +19,9 @@ class QuestListTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-//        questList = Array<String>(arrayLiteral: "30秒歩く", "1分走る", "5分腹筋する")
         questList = Array<String>()
         
-        let request = NSMutableURLRequest(URL: NSURL(string: "http://infinite-shelf-2944.herokuapp.com/list")!)
+        let request = NSMutableURLRequest(URL: NSURL(string: "http://infinite-shelf-2944.herokuapp.com/quest/list")!)
         httpGet(request, success: { (dict) -> Void in
             //  成功した場合の処理を書く
             if let data = dict { // dictが nilかどうかを判定する

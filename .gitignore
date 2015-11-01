@@ -44,3 +44,4 @@ Carthage/Build
 
 # Mac file system caches
 .DS_Store
+*~
