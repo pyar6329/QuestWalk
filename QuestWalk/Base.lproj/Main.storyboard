@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whZ-DK-zgF">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,24 +17,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nda-De-n1t">
-                                <rect key="frame" x="277.5" y="276" width="45" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nda-De-n1t">
+                                <rect key="frame" x="263" y="225" width="45" height="30"/>
                                 <animations/>
                                 <state key="normal" title="batttle"/>
                                 <connections>
                                     <segue destination="TgI-gH-vhP" kind="show" id="e3D-J1-7P8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yby-Zf-Qou">
-                                <rect key="frame" x="279.5" y="186" width="41" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yby-Zf-Qou">
+                                <rect key="frame" x="265" y="142" width="41" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Quest"/>
                                 <connections>
                                     <segue destination="yru-5u-I0j" kind="show" id="gRw-88-Mta"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxg-rT-OUp">
-                                <rect key="frame" x="257.5" y="348" width="85" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gxg-rT-OUp">
+                                <rect key="frame" x="243" y="297" width="85" height="30"/>
                                 <animations/>
                                 <state key="normal" title="visualization"/>
                                 <connections>
@@ -80,7 +81,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dHJ-7b-ihC" id="7mB-R9-Y3H">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <animations/>
                                 </tableViewCellContentView>
@@ -153,7 +154,7 @@
                                     <segue destination="dfm-Zg-LE9" kind="show" id="MTL-Q0-xii"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F97-Xx-Eza">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F97-Xx-Eza">
                                 <rect key="frame" x="270" y="215" width="61" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -305,10 +306,10 @@
             </objects>
             <point key="canvasLocation" x="1816" y="1006"/>
         </scene>
-        <!--View Controller-->
+        <!--Status View Controller-->
         <scene sceneID="Ukg-Q6-jQ8">
             <objects>
-                <viewController id="L92-tl-hQ7" sceneMemberID="viewController">
+                <viewController id="L92-tl-hQ7" customClass="QWStatusViewController" customModule="QuestWalk" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1nv-Dg-uSU"/>
                         <viewControllerLayoutGuide type="bottom" id="euE-Le-gCS"/>
@@ -317,43 +318,69 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMs-vV-rhi">
-                                <rect key="frame" x="279" y="128" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vMs-vV-rhi">
+                                <rect key="frame" x="184" y="128" width="212" height="106"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tj9-Az-Jcd">
-                                <rect key="frame" x="279" y="185" width="42" height="21"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uPQ-PW-xhb">
+                                <rect key="frame" x="257" y="455" width="70" height="30"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TFE-ER-lZf">
-                                <rect key="frame" x="279" y="238" width="42" height="21"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" red="0.21593327331354994" green="0.32808720164156069" blue="0.66666666666666663" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="Ikz-zq-ic8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Weekly">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="cWY-Ze-UHh" kind="show" id="ZWm-eK-q4H"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Tj9-Az-Jcd" firstAttribute="top" secondItem="vMs-vV-rhi" secondAttribute="bottom" constant="37" id="5eX-dH-LDF"/>
-                            <constraint firstItem="TFE-ER-lZf" firstAttribute="top" secondItem="Tj9-Az-Jcd" secondAttribute="bottom" constant="32" id="BF7-jK-Bxp"/>
-                            <constraint firstItem="TFE-ER-lZf" firstAttribute="centerX" secondItem="yky-ea-FqX" secondAttribute="centerX" id="QYq-YE-Q9r"/>
-                            <constraint firstItem="Tj9-Az-Jcd" firstAttribute="centerX" secondItem="yky-ea-FqX" secondAttribute="centerX" id="R5D-YG-MEi"/>
+                            <constraint firstAttribute="centerX" secondItem="uPQ-PW-xhb" secondAttribute="trailing" constant="-27" id="dfD-Dv-QUc"/>
                             <constraint firstItem="vMs-vV-rhi" firstAttribute="centerX" secondItem="yky-ea-FqX" secondAttribute="centerX" id="pPn-tb-J2s"/>
+                            <constraint firstItem="euE-Le-gCS" firstAttribute="top" secondItem="uPQ-PW-xhb" secondAttribute="bottom" constant="115" id="uae-n2-6eU"/>
                             <constraint firstItem="vMs-vV-rhi" firstAttribute="top" secondItem="1nv-Dg-uSU" secondAttribute="bottom" constant="64" id="vhg-ay-NuM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="label1" destination="vMs-vV-rhi" id="h82-Iy-aY7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KrX-nR-vhF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1816" y="1938"/>
+        </scene>
+        <!--Status Graph View Controller-->
+        <scene sceneID="QPl-rc-HMo">
+            <objects>
+                <viewController id="cWY-Ze-UHh" customClass="QWStatusGraphViewController" customModule="QuestWalk" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UZZ-mJ-cSA"/>
+                        <viewControllerLayoutGuide type="bottom" id="M9U-ON-kD9"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="98C-UT-ytV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xDb-85-JSS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2520" y="1938"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="zS6-ib-ohU">
@@ -371,6 +398,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6wk-zB-nMF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="289" y="786"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tA2-75-j7z">
+            <objects>
+                <viewController id="xsb-Go-OWa" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="txv-Xq-ea7"/>
+                        <viewControllerLayoutGuide type="bottom" id="iGU-H0-mjw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WfJ-ir-nIU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m4d-EI-gYA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
 </document>
