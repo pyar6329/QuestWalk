@@ -9,6 +9,6 @@
 #ifndef QuestWalk_Bridging_Header_h
 #define QuestWalk_Bridging_Header_h
 
+#import "BEMSimpleLineGraphView.h"
 
 #endif /* QuestWalk_Bridging_Header_h */
-#import "BEMSimpleLineGraphView.h"
