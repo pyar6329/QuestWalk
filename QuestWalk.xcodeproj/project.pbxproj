@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23BB45751BE7CE6500045B52 /* QWStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB45731BE7CE6500045B52 /* QWStatusViewController.swift */; };
+		23BB45761BE7CE6500045B52 /* QWStatusGraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23BB45741BE7CE6500045B52 /* QWStatusGraphViewController.swift */; };
+		5EE9ACFE53685EFD322649E8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 88BFD36C1D54E88796D34409 /* libPods.a */; };
 		707CF60F1BD21949006FB423 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF60E1BD21949006FB423 /* AppDelegate.swift */; };
 		707CF6111BD21949006FB423 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF6101BD21949006FB423 /* ViewController.swift */; };
 		707CF6141BD21949006FB423 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 707CF6121BD21949006FB423 /* Main.storyboard */; };
@@ -35,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1BCC49D9251694C10FCC3B5F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		23BB45731BE7CE6500045B52 /* QWStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QWStatusViewController.swift; sourceTree = "<group>"; };
+		23BB45741BE7CE6500045B52 /* QWStatusGraphViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QWStatusGraphViewController.swift; sourceTree = "<group>"; };
+		23BB45771BE7CE6D00045B52 /* QuestWalk-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuestWalk-Bridging-Header.h"; sourceTree = "<group>"; };
 		707CF60B1BD21949006FB423 /* QuestWalk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuestWalk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		707CF60E1BD21949006FB423 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		707CF6101BD21949006FB423 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +56,8 @@
 		707CF62E1BD21949006FB423 /* QuestWalkUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestWalkUITests.swift; sourceTree = "<group>"; };
 		707CF6301BD21949006FB423 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		707CF63C1BD21B75006FB423 /* QuestListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestListTableViewController.swift; sourceTree = "<group>"; };
+		770A25B424CDED25A8DDB0A7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		88BFD36C1D54E88796D34409 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EE9ACFE53685EFD322649E8 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +93,8 @@
 				707CF6221BD21949006FB423 /* QuestWalkTests */,
 				707CF62D1BD21949006FB423 /* QuestWalkUITests */,
 				707CF60C1BD21949006FB423 /* Products */,
+				811B00F288394F2A737382AD /* Pods */,
+				76998397A9850FFB543B834F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +118,9 @@
 				707CF6151BD21949006FB423 /* Assets.xcassets */,
 				707CF6171BD21949006FB423 /* LaunchScreen.storyboard */,
 				707CF61A1BD21949006FB423 /* Info.plist */,
+				23BB45731BE7CE6500045B52 /* QWStatusViewController.swift */,
+				23BB45741BE7CE6500045B52 /* QWStatusGraphViewController.swift */,
+				23BB45771BE7CE6D00045B52 /* QuestWalk-Bridging-Header.h */,
 			);
 			path = QuestWalk;
 			sourceTree = "<group>";
@@ -128,6 +143,23 @@
 			path = QuestWalkUITests;
 			sourceTree = "<group>";
 		};
+		76998397A9850FFB543B834F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				88BFD36C1D54E88796D34409 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		811B00F288394F2A737382AD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1BCC49D9251694C10FCC3B5F /* Pods.debug.xcconfig */,
+				770A25B424CDED25A8DDB0A7 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 707CF6331BD21949006FB423 /* Build configuration list for PBXNativeTarget "QuestWalk" */;
 			buildPhases = (
+				0A2763CC5B0C3B06F024B221 /* Check Pods Manifest.lock */,
 				707CF6071BD21949006FB423 /* Sources */,
 				707CF6081BD21949006FB423 /* Frameworks */,
 				707CF6091BD21949006FB423 /* Resources */,
+				AA65E5A3FD631F86D8FBED84 /* Embed Pods Frameworks */,
+				62D821D86281ECCAC84F599B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,7 +230,7 @@
 				TargetAttributes = {
 					707CF60A1BD21949006FB423 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = KHFXF6N2QE;
+						DevelopmentTeam = 5429CA762T;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 0;
@@ -252,6 +287,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A2763CC5B0C3B06F024B221 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		62D821D86281ECCAC84F599B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA65E5A3FD631F86D8FBED84 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		707CF6071BD21949006FB423 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -259,6 +342,8 @@
 			files = (
 				707CF6111BD21949006FB423 /* ViewController.swift in Sources */,
 				707CF63D1BD21B75006FB423 /* QuestListTableViewController.swift in Sources */,
+				23BB45751BE7CE6500045B52 /* QWStatusViewController.swift in Sources */,
+				23BB45761BE7CE6500045B52 /* QWStatusGraphViewController.swift in Sources */,
 				707CF60F1BD21949006FB423 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +484,7 @@
 		};
 		707CF6341BD21949006FB423 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1BCC49D9251694C10FCC3B5F /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -408,11 +494,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.aiit.chubachipbl2015.QuestWalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "QuestWalk/QuestWalk-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		707CF6351BD21949006FB423 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 770A25B424CDED25A8DDB0A7 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -422,6 +510,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = jp.ac.aiit.chubachipbl2015.QuestWalk;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "QuestWalk/QuestWalk-Bridging-Header.h";
 			};
 			name = Release;
 		};
