@@ -18,6 +18,7 @@
 		707CF6241BD21949006FB423 /* QuestWalkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF6231BD21949006FB423 /* QuestWalkTests.swift */; };
 		707CF62F1BD21949006FB423 /* QuestWalkUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF62E1BD21949006FB423 /* QuestWalkUITests.swift */; };
 		707CF63D1BD21B75006FB423 /* QuestListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 707CF63C1BD21B75006FB423 /* QuestListTableViewController.swift */; };
+		F8AD62DA1BF342780072D0AA /* QWMeasurementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8AD62D91BF342780072D0AA /* QWMeasurementViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		707CF63C1BD21B75006FB423 /* QuestListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestListTableViewController.swift; sourceTree = "<group>"; };
 		770A25B424CDED25A8DDB0A7 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		88BFD36C1D54E88796D34409 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8AD62D61BF33F510072D0AA /* QuestWalk.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = QuestWalk.entitlements; sourceTree = "<group>"; };
+		F8AD62D91BF342780072D0AA /* QWMeasurementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QWMeasurementViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,9 +114,11 @@
 		707CF60D1BD21949006FB423 /* QuestWalk */ = {
 			isa = PBXGroup;
 			children = (
+				F8AD62D61BF33F510072D0AA /* QuestWalk.entitlements */,
 				707CF60E1BD21949006FB423 /* AppDelegate.swift */,
 				707CF6101BD21949006FB423 /* ViewController.swift */,
 				707CF63C1BD21B75006FB423 /* QuestListTableViewController.swift */,
+				F8AD62D91BF342780072D0AA /* QWMeasurementViewController.swift */,
 				707CF6121BD21949006FB423 /* Main.storyboard */,
 				707CF6151BD21949006FB423 /* Assets.xcassets */,
 				707CF6171BD21949006FB423 /* LaunchScreen.storyboard */,
@@ -230,7 +235,7 @@
 				TargetAttributes = {
 					707CF60A1BD21949006FB423 = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = 5429CA762T;
+						DevelopmentTeam = 745U3M8L7Q;
 						SystemCapabilities = {
 							com.apple.HealthKit = {
 								enabled = 0;
@@ -341,6 +346,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				707CF6111BD21949006FB423 /* ViewController.swift in Sources */,
+				F8AD62DA1BF342780072D0AA /* QWMeasurementViewController.swift in Sources */,
 				707CF63D1BD21B75006FB423 /* QuestListTableViewController.swift in Sources */,
 				23BB45751BE7CE6500045B52 /* QWStatusViewController.swift in Sources */,
 				23BB45761BE7CE6500045B52 /* QWStatusGraphViewController.swift in Sources */,

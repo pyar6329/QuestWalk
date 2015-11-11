@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whZ-DK-zgF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whZ-DK-zgF">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
@@ -101,10 +101,10 @@
             </objects>
             <point key="canvasLocation" x="1816" y="205"/>
         </scene>
-        <!--View Controller-->
+        <!--Measurement View Controller-->
         <scene sceneID="IZz-sn-LRL">
             <objects>
-                <viewController id="bhm-aK-VaF" sceneMemberID="viewController">
+                <viewController id="bhm-aK-VaF" customClass="QWMeasurementViewController" customModule="QuestWalk" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8g1-IS-fPD"/>
                         <viewControllerLayoutGuide type="bottom" id="Gfr-dD-gyZ"/>
@@ -118,7 +118,7 @@
                                 <animations/>
                                 <state key="normal" title="Start!"/>
                                 <connections>
-                                    <segue destination="P8y-ax-HXT" kind="show" id="b6z-WM-At3"/>
+                                    <action selector="MeasureStartButtonAction:" destination="bhm-aK-VaF" eventType="touchUpInside" id="X8q-oj-eMy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -129,6 +129,9 @@
                             <constraint firstItem="90p-0r-VIW" firstAttribute="centerY" secondItem="H4e-V8-vs9" secondAttribute="centerY" id="e3z-Yj-vpy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="MeasureStartButton" destination="90p-0r-VIW" id="xVh-2s-Ghq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHg-Dj-3gz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -188,7 +191,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result string" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEQ-dt-0na">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Result string" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iEQ-dt-0na">
                                 <rect key="frame" x="252" y="178" width="96" height="21"/>
                                 <animations/>
                                 <constraints>
@@ -198,7 +201,7 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBW-BA-Xzh">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBW-BA-Xzh">
                                 <rect key="frame" x="264" y="293" width="72" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Good Job!"/>
