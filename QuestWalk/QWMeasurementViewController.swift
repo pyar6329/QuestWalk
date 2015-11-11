@@ -10,12 +10,14 @@ import UIKit
 
 class QWMeasurementViewController: UIViewController {
 
-//    @IBOutlet weak var TimeLabel: UILabel!
-//    TimeLabel.text = "hello"
     @IBOutlet weak var MeasureStartButton: UIButton!
+    @IBOutlet weak var TimeLabel: UILabel!
+    var timer: NSTimer!
+    var counter: Float = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        TimeLabel.text = ""
         // Do any additional setup after loading the view.
     }
 
@@ -25,9 +27,22 @@ class QWMeasurementViewController: UIViewController {
     }
 
     @IBAction func MeasureStartButtonAction(sender: AnyObject) {
-        MeasureStartButton.setTitle("Stop", forState: .Normal)
-//        TimeLabel.text = "Hello"
-
+        // timerの開始
+        if MeasureStartButton.currentTitle == "Start!" {
+            MeasureStartButton.setTitle("Stop", forState: .Normal)
+            timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("onUpdate:"), userInfo: nil, repeats: true)
+        }
+        // timerの停止
+        else {
+            MeasureStartButton.setTitle("Start!", forState: .Normal)
+            timer.invalidate()
+        }
+    }
+    
+    // タイマーの増加とLabelに反映の処理
+    func onUpdate(timer: NSTimer){
+        counter += 0.1
+        TimeLabel.text = String(counter)
     }
     
     /*
