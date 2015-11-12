@@ -127,19 +127,30 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKE-qn-YTx">
+                                <rect key="frame" x="285" y="333" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="MeasureResetButtonAction:" destination="bhm-aK-VaF" eventType="touchUpInside" id="GWs-wR-oM6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="NKE-qn-YTx" firstAttribute="top" secondItem="90p-0r-VIW" secondAttribute="bottom" constant="18" id="1eG-JW-GVw"/>
                             <constraint firstItem="90p-0r-VIW" firstAttribute="top" secondItem="V8A-X4-EF5" secondAttribute="bottom" constant="59" id="DJr-YM-5dl"/>
                             <constraint firstItem="90p-0r-VIW" firstAttribute="centerX" secondItem="H4e-V8-vs9" secondAttribute="centerX" id="PBA-TJ-s49"/>
+                            <constraint firstItem="NKE-qn-YTx" firstAttribute="centerX" secondItem="H4e-V8-vs9" secondAttribute="centerX" id="UfI-gy-8rz"/>
                             <constraint firstItem="90p-0r-VIW" firstAttribute="centerY" secondItem="H4e-V8-vs9" secondAttribute="centerY" id="e3z-Yj-vpy"/>
                             <constraint firstItem="V8A-X4-EF5" firstAttribute="centerX" secondItem="H4e-V8-vs9" secondAttribute="centerX" id="ifP-PU-qd0"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="MeasureResetButton" destination="NKE-qn-YTx" id="CEX-6H-m6i"/>
                         <outlet property="MeasureStartButton" destination="90p-0r-VIW" id="xVh-2s-Ghq"/>
                         <outlet property="TimeLabel" destination="V8A-X4-EF5" id="YcY-sS-RZD"/>
+                        <outlet property="measureResetButton" destination="UfI-gy-8rz" id="PxF-AN-YBI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHg-Dj-3gz" userLabel="First Responder" sceneMemberID="firstResponder"/>

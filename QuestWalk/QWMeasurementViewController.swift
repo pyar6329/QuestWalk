@@ -11,14 +11,17 @@ import UIKit
 class QWMeasurementViewController: UIViewController {
 
     @IBOutlet weak var MeasureStartButton: UIButton!
+    
+    @IBOutlet weak var MeasureResetButton: UIButton!
+
     @IBOutlet weak var TimeLabel: UILabel!
     var timer: NSTimer!
-    var counter: Float = 0
     var startTime: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+//        MeasureResetButton.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,9 +31,11 @@ class QWMeasurementViewController: UIViewController {
 
     @IBAction func MeasureStartButtonAction(sender: AnyObject) {
         // timerの開始
+//        MeasureResetButton.hidden = true
         if MeasureStartButton.currentTitle == "Start" {
             if startTime == 0.0 {
                 startTime = NSDate.timeIntervalSinceReferenceDate()
+
             }
             MeasureStartButton.setTitle("Stop", forState: .Normal)
             timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: Selector("onUpdate:"), userInfo: nil, repeats: true)
@@ -42,6 +47,10 @@ class QWMeasurementViewController: UIViewController {
         }
     }
     
+    @IBAction func MeasureResetButtonAction(sender: AnyObject) {
+        startTime = 0.0
+        TimeLabel.text = "00:00:00.00"
+    }
     // タイマーの増加とLabelに反映の処理
     func onUpdate(timer: NSTimer){
         let cTime = NSDate.timeIntervalSinceReferenceDate() - startTime
