@@ -14,13 +14,10 @@ class QWMeasurementViewController: UIViewController {
     @IBOutlet weak var TimeLabel: UILabel!
     var timer: NSTimer!
     var counter: Float = 0
-    let formatter = NSDateFormatter()
     var startTime: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        TimeLabel.text = "00:00:00.00"
-        formatter.timeStyle = NSDateFormatterStyle.LongStyle
         // Do any additional setup after loading the view.
     }
 
@@ -32,7 +29,9 @@ class QWMeasurementViewController: UIViewController {
     @IBAction func MeasureStartButtonAction(sender: AnyObject) {
         // timerの開始
         if MeasureStartButton.currentTitle == "Start" {
-            startTime = NSDate.timeIntervalSinceReferenceDate()
+            if startTime == 0.0 {
+                startTime = NSDate.timeIntervalSinceReferenceDate()
+            }
             MeasureStartButton.setTitle("Stop", forState: .Normal)
             timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: Selector("onUpdate:"), userInfo: nil, repeats: true)
         }
