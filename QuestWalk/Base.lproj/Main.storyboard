@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whZ-DK-zgF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whZ-DK-zgF">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -113,33 +113,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90p-0r-VIW">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="90p-0r-VIW">
                                 <rect key="frame" x="281" y="285" width="39" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Start!"/>
+                                <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="MeasureStartButtonAction:" destination="bhm-aK-VaF" eventType="touchUpInside" id="X8q-oj-eMy"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0:00:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8A-X4-EF5">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00:00.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8A-X4-EF5">
                                 <rect key="frame" x="270" y="205" width="61" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKE-qn-YTx">
+                                <rect key="frame" x="285" y="333" width="39" height="30"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="MeasureResetButtonAction:" destination="bhm-aK-VaF" eventType="touchUpInside" id="GWs-wR-oM6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="NKE-qn-YTx" firstAttribute="top" secondItem="90p-0r-VIW" secondAttribute="bottom" constant="18" id="1eG-JW-GVw"/>
                             <constraint firstItem="90p-0r-VIW" firstAttribute="top" secondItem="V8A-X4-EF5" secondAttribute="bottom" constant="59" id="DJr-YM-5dl"/>
                             <constraint firstItem="90p-0r-VIW" firstAttribute="centerX" secondItem="H4e-V8-vs9" secondAttribute="centerX" id="PBA-TJ-s49"/>
+                            <constraint firstItem="NKE-qn-YTx" firstAttribute="centerX" secondItem="H4e-V8-vs9" secondAttribute="centerX" id="UfI-gy-8rz"/>
                             <constraint firstItem="90p-0r-VIW" firstAttribute="centerY" secondItem="H4e-V8-vs9" secondAttribute="centerY" id="e3z-Yj-vpy"/>
                             <constraint firstItem="V8A-X4-EF5" firstAttribute="centerX" secondItem="H4e-V8-vs9" secondAttribute="centerX" id="ifP-PU-qd0"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="MeasureResetButton" destination="NKE-qn-YTx" id="CEX-6H-m6i"/>
                         <outlet property="MeasureStartButton" destination="90p-0r-VIW" id="xVh-2s-Ghq"/>
                         <outlet property="TimeLabel" destination="V8A-X4-EF5" id="YcY-sS-RZD"/>
+                        <outlet property="measureResetButton" destination="UfI-gy-8rz" id="PxF-AN-YBI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YHg-Dj-3gz" userLabel="First Responder" sceneMemberID="firstResponder"/>

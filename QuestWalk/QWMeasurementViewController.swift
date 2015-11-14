@@ -11,14 +11,17 @@ import UIKit
 class QWMeasurementViewController: UIViewController {
 
     @IBOutlet weak var MeasureStartButton: UIButton!
+    
+    @IBOutlet weak var MeasureResetButton: UIButton!
+
     @IBOutlet weak var TimeLabel: UILabel!
     var timer: NSTimer!
-    var counter: Float = 0
+    var startTime: Double = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        TimeLabel.text = ""
         // Do any additional setup after loading the view.
+//        MeasureResetButton.hidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,21 +31,35 @@ class QWMeasurementViewController: UIViewController {
 
     @IBAction func MeasureStartButtonAction(sender: AnyObject) {
         // timerの開始
-        if MeasureStartButton.currentTitle == "Start!" {
+//        MeasureResetButton.hidden = true
+        if MeasureStartButton.currentTitle == "Start" {
+            if startTime == 0.0 {
+                startTime = NSDate.timeIntervalSinceReferenceDate()
+
+            }
             MeasureStartButton.setTitle("Stop", forState: .Normal)
-            timer = NSTimer.scheduledTimerWithTimeInterval(0.1, target: self, selector: Selector("onUpdate:"), userInfo: nil, repeats: true)
+            timer = NSTimer.scheduledTimerWithTimeInterval(0.01, target: self, selector: Selector("onUpdate:"), userInfo: nil, repeats: true)
         }
         // timerの停止
         else {
-            MeasureStartButton.setTitle("Start!", forState: .Normal)
+            MeasureStartButton.setTitle("Start", forState: .Normal)
             timer.invalidate()
         }
     }
     
+    @IBAction func MeasureResetButtonAction(sender: AnyObject) {
+        startTime = 0.0
+        TimeLabel.text = "00:00:00.00"
+    }
     // タイマーの増加とLabelに反映の処理
     func onUpdate(timer: NSTimer){
-        counter += 0.1
-        TimeLabel.text = String(counter)
+        let cTime = NSDate.timeIntervalSinceReferenceDate() - startTime
+        let hour = integer_t(cTime/(60*60))
+        let minute = integer_t(fmod(cTime/60, 60))
+        let second = integer_t(fmod(cTime, 60))
+        let milisecond = integer_t((cTime - floor(cTime))*100)
+        let NowTime = NSString(format: "%02d:%02d:%02d.%02d", hour, minute, second, milisecond)
+        TimeLabel.text = String(NowTime)
     }
     
     /*
