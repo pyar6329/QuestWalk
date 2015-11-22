@@ -19,6 +19,7 @@ class QuestListTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        self.navigationItem.title = NSLocalizedString("Quest", comment: "")
         questList = Array<String>()
         
         let request = NSMutableURLRequest(URL: NSURL(string: "http://infinite-shelf-2944.herokuapp.com/quest/list")!)
@@ -29,7 +30,9 @@ class QuestListTableViewController: UITableViewController {
                 items.enumerateObjectsUsingBlock({ (item, Index, stop) -> Void in
                     self.questList.append((item as! NSDictionary).objectForKey("title") as! String)
                 })
-                self.tableView.reloadData()
+                dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                    self.tableView.reloadData()                    
+                })
             }
             }) { (error) -> Void in
                 // 失敗した場合の処理を書く
