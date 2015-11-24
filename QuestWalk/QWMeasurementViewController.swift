@@ -49,6 +49,8 @@ class QWMeasurementViewController: UIViewController {
     
     @IBAction func MeasureResetButtonAction(sender: AnyObject) {
         startTime = 0.0
+        MeasureStartButton.setTitle("Start", forState: .Normal)
+        timer.invalidate()
         TimeLabel.text = "00:00:00.00"
     }
     // タイマーの増加とLabelに反映の処理
@@ -59,7 +61,7 @@ class QWMeasurementViewController: UIViewController {
         let second = integer_t(fmod(cTime, 60))
         let milisecond = integer_t((cTime - floor(cTime))*100)
         let NowTime = NSString(format: "%02d:%02d:%02d.%02d", hour, minute, second, milisecond)
-        TimeLabel.text = String(NowTime)
+        self.TimeLabel.text = String(NowTime)
     }
     
     /*
